@@ -11,7 +11,6 @@ a {
   color: inherit;
 }
 
-
 .gallery {
   margin-bottom: 100em;
   position: relative;
@@ -45,8 +44,6 @@ a {
   }
 }
 
-
-
 .gallery {
   .item {
     @include animation(galleryAnimation #{$gallery-total-duration}s infinite);
@@ -60,11 +57,11 @@ a {
     display: none;
   }
   .control-operator:target ~ .item {
-    animation: none;
+    @include animation(none);
   }
   .control-operator:target ~ .controls .control-item {
     @include control-inactive;
-    animation: none;
+    @include animation(none);
   }
   @for $i from 1 through $gallery-item-count {
     .control-operator:nth-of-type(#{$i}):target ~ .item:nth-of-type(#{$i}) {

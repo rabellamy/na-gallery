@@ -211,11 +211,19 @@ a {
   display: none;
 }
 .gallery .control-operator:target ~ .item {
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
   animation: none;
 }
 .gallery .control-operator:target ~ .controls .control-item {
   color: whiteSmoke;
   color: rgba(255, 255, 255, 0.4);
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
   animation: none;
 }
 .gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
