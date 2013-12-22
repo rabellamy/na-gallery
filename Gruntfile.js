@@ -4,7 +4,6 @@ module.exports = function (grunt) {
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    // Watch for changes and trigger compass, jshint, uglify and livereload
     watch: {
       compass: {
         files: ['sass/{,**/}*.scss'],

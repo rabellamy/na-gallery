@@ -1,6 +1,9 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    animation (0.1.alpha.3)
+      compass (>= 0.12.0)
+      sass (>= 3.2.0.alpha.95)
     breakpoint (2.2.0)
       compass (~> 0.13.alpha.7)
       sass (~> 3.3.0.rc.1)
@@ -57,6 +60,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  animation (~> 0.1.alpha.0)
   breakpoint (~> 2.2.0)
   color-schemer (~> 0.2.7)
   compass (~> 0.13.alpha.7)
