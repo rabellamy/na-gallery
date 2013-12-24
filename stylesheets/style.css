@@ -307,7 +307,7 @@ a {
   color: #595959;
   font-size: 13pt;
   text-rendering: optimizeLegibility;
-  margin-top: 5em;
+  margin-top: 6em;
 }
 @media (min-width: 16.25em) {
   .item-1 p {
@@ -384,7 +384,32 @@ a {
     font-size: 24.25pt;
   }
 }
-@media (min-width: 33.75em) {
+@media (min-width: 35em) {
+  .item-1 p {
+    font-size: 25pt;
+  }
+}
+@media (min-width: 36.25em) {
+  .item-1 p {
+    font-size: 25.75pt;
+  }
+}
+@media (min-width: 37.5em) {
+  .item-1 p {
+    font-size: 26.5pt;
+  }
+}
+@media (min-width: 38.75em) {
+  .item-1 p {
+    font-size: 27.25pt;
+  }
+}
+@media (min-width: 40em) {
+  .item-1 p {
+    font-size: 28pt;
+  }
+}
+@media (min-width: 25em) {
   .item-1 p {
     margin-top: 4em;
   }
@@ -397,7 +422,7 @@ a {
   color: #262626;
   font-size: 8.6pt;
   text-rendering: optimizeLegibility;
-  margin-top: 5em;
+  margin-top: 9em;
 }
 @media (min-width: 16.25em) {
   .item-2 p {
@@ -474,10 +499,45 @@ a {
     font-size: 19.85pt;
   }
 }
+@media (min-width: 35em) {
+  .item-2 p {
+    font-size: 20.6pt;
+  }
+}
+@media (min-width: 36.25em) {
+  .item-2 p {
+    font-size: 21.35pt;
+  }
+}
+@media (min-width: 37.5em) {
+  .item-2 p {
+    font-size: 22.1pt;
+  }
+}
+@media (min-width: 38.75em) {
+  .item-2 p {
+    font-size: 22.85pt;
+  }
+}
+@media (min-width: 40em) {
+  .item-2 p {
+    font-size: 23.6pt;
+  }
+}
+@media (min-width: 25em) {
+  .item-2 p {
+    margin-top: 5em;
+  }
+}
 
 .item-3 {
   background: #285E88;
 }
 .item-3 img {
-  margin-top: 5em;
+  margin-top: 2em;
+}
+@media (min-width: 25em) {
+  .item-3 img {
+    margin-top: 5em;
+  }
 }
