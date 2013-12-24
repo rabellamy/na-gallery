@@ -1,0 +1,9 @@
+@import "mixins";
+
+%control-inactive {
+  @include control-inactive;
+}
+
+%control-active {
+  @include control-active;
+}

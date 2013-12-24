@@ -1,6 +1,4 @@
 
-$gallery-item-count: 3;
-$gallery-item-display-duration: 4;
-$gallery-item-transition-duration: 1;
-$gallery-item-total-duration: $gallery-item-display-duration + $gallery-item-transition-duration;
-$gallery-total-duration: $gallery-item-total-duration * $gallery-item-count;
+$item-display-duration: 5 !default; //seconds
+$transition-duration: 2 !default; // seconds
+$display-duration: $transition-duration + $item-display-duration;

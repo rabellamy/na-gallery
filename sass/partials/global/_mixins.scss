@@ -1,10 +1,66 @@
+@import "variables";
 
 @mixin control-inactive {
   color: whiteSmoke;
-  color: rgba(255, 255, 255, .4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 @mixin control-active {
   color: white;
   color: rgba(255, 255, 255, 1);
+}
+
+@mixin gallery($item-count) {
+  $total-duration: $display-duration * $item-count;
+
+  @include keyframes(galleryAnimation-#{$item-count}) {
+    0% {
+      opacity: 0;
+    }
+    #{100% * $transition-duration / $total-duration},
+    #{100% * $display-duration / $total-duration} {
+      opacity: 1;
+    }
+    #{100% * ($display-duration + $transition-duration) / $total-duration},
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @include keyframes(controlAnimation-#{$item-count}) {
+    0% {
+      @include control-inactive;
+    }
+    #{100% * $transition-duration / $total-duration},
+    #{100% * $display-duration / $total-duration} {
+      @include control-active;
+    }
+    #{100% * ($display-duration + $transition-duration) / $total-duration},
+    100% {
+      @include control-inactive;
+    }
+  }
+
+  .gallery {
+    .control-item {
+      @include animation(controlAnimation-#{$item-count} #{$total-duration}s infinite);
+    }
+    .item {
+      @include animation(galleryAnimation-#{$item-count} #{$total-duration}s infinite);
+    }
+    @for $i from 1 through $item-count {
+      .control-operator:nth-of-type(#{$i}):target ~ .item:nth-of-type(#{$i}) {
+        pointer-events: auto;
+        opacity: 1;
+      }
+      .control-operator:nth-of-type(#{$i}):target ~ .controls .control-item:nth-of-type(#{$i}) {
+        @include control-active;
+      }
+      .control-item:nth-of-type(#{$i}),
+      .item:nth-of-type(#{$i}) {
+        $delay: #{($i - 1) * $display-duration - $transition-duration}s;
+        @include animation-delay(#{$delay});
+      }
+    }
+  }
 }

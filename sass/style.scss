@@ -45,14 +45,6 @@ a {
 }
 
 .gallery {
-  .item {
-    @include animation(galleryAnimation #{$gallery-total-duration}s infinite);
-  }
-  .controls {
-    .control-item {
-      @include animation(controlAnimation #{$gallery-total-duration}s infinite);
-    }
-  }
   .control-operator {
     display: none;
   }
@@ -63,21 +55,9 @@ a {
     @include control-inactive;
     @include animation(none);
   }
-  @for $i from 1 through $gallery-item-count {
-    .control-operator:nth-of-type(#{$i}):target ~ .item:nth-of-type(#{$i}) {
-      opacity: 1;
-    }
-    .control-operator:nth-of-type(#{$i}):target ~ .controls .control-item:nth-of-type(#{$i}) {
-      @include control-active;
-    }
-    .item:nth-of-type(#{$i}),
-    .control-item:nth-of-type(#{$i}) {
-      $delay:#{ ($i - 1) * ($gallery-item-total-duration) - $gallery-item-transition-duration }s;
-      @include animation-delay($delay);
-    }
-  }
 }
 
+@include gallery(3);
 
 
 .item-1 {
@@ -89,5 +69,5 @@ a {
 }
 
 .item-3 {
-  background: #BDC3C7;
+  background: #285E88;
 }
