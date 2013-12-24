@@ -34,21 +34,21 @@ a {
 }
 .gallery .item:first-of-type {
   opacity: 1;
+  z-index: 1;
 }
 .gallery .controls {
-  color: whiteSmoke;
-  color: rgba(255, 255, 255, 0.4);
+  color: #8c8c8c;
   position: absolute;
   width: 100%;
   bottom: 0;
   text-align: center;
+  z-index: 5;
   font-size: 3em;
 }
 .gallery .controls a {
   transition: color .25s;
 }
 .gallery .controls a:hover {
-  color: white;
   color: white;
 }
 
@@ -61,8 +61,7 @@ a {
   animation: none;
 }
 .gallery .control-operator:target ~ .controls .control-item {
-  color: whiteSmoke;
-  color: rgba(255, 255, 255, 0.4);
+  color: #8c8c8c;
   -moz-animation: none;
   -webkit-animation: none;
   animation: none;
@@ -71,100 +70,100 @@ a {
 @-moz-keyframes galleryAnimation-3 {
   0% {
     opacity: 0;
+    z-index: 0;
   }
 
   9.52381%,
   33.33333% {
     opacity: 1;
+    z-index: 1;
   }
 
   42.85714%,
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 @-webkit-keyframes galleryAnimation-3 {
   0% {
     opacity: 0;
+    z-index: 0;
   }
 
   9.52381%,
   33.33333% {
     opacity: 1;
+    z-index: 1;
   }
 
   42.85714%,
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 @keyframes galleryAnimation-3 {
   0% {
     opacity: 0;
+    z-index: 0;
   }
 
   9.52381%,
   33.33333% {
     opacity: 1;
+    z-index: 1;
   }
 
   42.85714%,
   100% {
     opacity: 0;
+    z-index: 0;
   }
 }
 @-moz-keyframes controlAnimation-3 {
   0% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
+    color: #8c8c8c;
   }
 
   9.52381%,
   33.33333% {
     color: white;
-    color: white;
   }
 
   42.85714%,
   100% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
+    color: #8c8c8c;
   }
 }
 @-webkit-keyframes controlAnimation-3 {
   0% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
+    color: #8c8c8c;
   }
 
   9.52381%,
   33.33333% {
     color: white;
-    color: white;
   }
 
   42.85714%,
   100% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
+    color: #8c8c8c;
   }
 }
 @keyframes controlAnimation-3 {
   0% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
+    color: #8c8c8c;
   }
 
   9.52381%,
   33.33333% {
     color: white;
-    color: white;
   }
 
   42.85714%,
   100% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
+    color: #8c8c8c;
   }
 }
 .gallery .control-item {
@@ -180,9 +179,9 @@ a {
 .gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
   pointer-events: auto;
   opacity: 1;
+  z-index: 1;
 }
 .gallery .control-operator:nth-of-type(1):target ~ .controls .control-item:nth-of-type(1) {
-  color: white;
   color: white;
 }
 .gallery .control-item:nth-of-type(1),
@@ -194,9 +193,9 @@ a {
 .gallery .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
   pointer-events: auto;
   opacity: 1;
+  z-index: 1;
 }
 .gallery .control-operator:nth-of-type(2):target ~ .controls .control-item:nth-of-type(2) {
-  color: white;
   color: white;
 }
 .gallery .control-item:nth-of-type(2),
@@ -208,9 +207,9 @@ a {
 .gallery .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
   pointer-events: auto;
   opacity: 1;
+  z-index: 1;
 }
 .gallery .control-operator:nth-of-type(3):target ~ .controls .control-item:nth-of-type(3) {
-  color: white;
   color: white;
 }
 .gallery .control-item:nth-of-type(3),
@@ -223,260 +222,224 @@ a {
 .item-1 {
   background: #FF5C43;
 }
-.item-1 p {
+.item-1 .could-i-use-a-container-wrapper {
+  margin-top: 5em;
+}
+.item-1 .could-i-use-a-container-wrapper a {
   color: #595959;
   text-rendering: optimizeLegibility;
   font-size: 13pt;
-  margin-top: 4em;
 }
 @media (min-width: 16.25em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 13.75pt;
-    margin-top: 3.92em;
   }
 }
 @media (min-width: 17.5em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 14.5pt;
-    margin-top: 3.84em;
   }
 }
 @media (min-width: 18.75em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 15.25pt;
-    margin-top: 3.76em;
   }
 }
 @media (min-width: 20em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 16pt;
-    margin-top: 3.68em;
   }
 }
 @media (min-width: 21.25em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 16.75pt;
-    margin-top: 3.6em;
   }
 }
 @media (min-width: 22.5em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 17.5pt;
-    margin-top: 3.52em;
   }
 }
 @media (min-width: 23.75em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 18.25pt;
-    margin-top: 3.44em;
   }
 }
 @media (min-width: 25em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 19pt;
-    margin-top: 3.36em;
   }
 }
 @media (min-width: 26.25em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 19.75pt;
-    margin-top: 3.28em;
   }
 }
 @media (min-width: 27.5em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 20.5pt;
-    margin-top: 3.2em;
   }
 }
 @media (min-width: 28.75em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 21.25pt;
-    margin-top: 3.12em;
   }
 }
 @media (min-width: 30em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 22pt;
-    margin-top: 3.04em;
   }
 }
 @media (min-width: 31.25em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 22.75pt;
-    margin-top: 2.96em;
   }
 }
 @media (min-width: 32.5em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 23.5pt;
-    margin-top: 2.88em;
   }
 }
 @media (min-width: 33.75em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 24.25pt;
-    margin-top: 2.8em;
   }
 }
 @media (min-width: 35em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 25pt;
-    margin-top: 2.72em;
   }
 }
 @media (min-width: 36.25em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 25.75pt;
-    margin-top: 2.64em;
   }
 }
 @media (min-width: 37.5em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 26.5pt;
-    margin-top: 2.56em;
   }
 }
 @media (min-width: 38.75em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 27.25pt;
-    margin-top: 2.48em;
   }
 }
 @media (min-width: 40em) {
-  .item-1 p {
+  .item-1 .could-i-use-a-container-wrapper a {
     font-size: 28pt;
-    margin-top: 2.4em;
   }
 }
 
 .item-2 {
   background: #097BC0;
 }
-.item-2 p {
+.item-2 .nyc-camp-hashtag-wrapper {
+  margin-top: 6em;
+}
+.item-2 .nyc-camp-hashtag-wrapper a {
   color: #262626;
   font-size: 8.6pt;
-  margin-top: 6em;
   text-rendering: optimizeLegibility;
 }
 @media (min-width: 16.25em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 9.35pt;
-    margin-top: 5.85em;
   }
 }
 @media (min-width: 17.5em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 10.1pt;
-    margin-top: 5.7em;
   }
 }
 @media (min-width: 18.75em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 10.85pt;
-    margin-top: 5.55em;
   }
 }
 @media (min-width: 20em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 11.6pt;
-    margin-top: 5.4em;
   }
 }
 @media (min-width: 21.25em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 12.35pt;
-    margin-top: 5.25em;
   }
 }
 @media (min-width: 22.5em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 13.1pt;
-    margin-top: 5.1em;
   }
 }
 @media (min-width: 23.75em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 13.85pt;
-    margin-top: 4.95em;
   }
 }
 @media (min-width: 25em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 14.6pt;
-    margin-top: 4.8em;
   }
 }
 @media (min-width: 26.25em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 15.35pt;
-    margin-top: 4.65em;
   }
 }
 @media (min-width: 27.5em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 16.1pt;
-    margin-top: 4.5em;
   }
 }
 @media (min-width: 28.75em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 16.85pt;
-    margin-top: 4.35em;
   }
 }
 @media (min-width: 30em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 17.6pt;
-    margin-top: 4.2em;
   }
 }
 @media (min-width: 31.25em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 18.35pt;
-    margin-top: 4.05em;
   }
 }
 @media (min-width: 32.5em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 19.1pt;
-    margin-top: 3.9em;
   }
 }
 @media (min-width: 33.75em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 19.85pt;
-    margin-top: 3.75em;
   }
 }
 @media (min-width: 35em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 20.6pt;
-    margin-top: 3.6em;
   }
 }
 @media (min-width: 36.25em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 21.35pt;
-    margin-top: 3.45em;
   }
 }
 @media (min-width: 37.5em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 22.1pt;
-    margin-top: 3.3em;
   }
 }
 @media (min-width: 38.75em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 22.85pt;
-    margin-top: 3.15em;
   }
 }
 @media (min-width: 40em) {
-  .item-2 p {
+  .item-2 .nyc-camp-hashtag-wrapper a {
     font-size: 23.6pt;
-    margin-top: 3em;
   }
 }
 

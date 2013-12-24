@@ -1,3 +1,4 @@
+
 @import "toolkit";
 
 @import "partials/global/variables";
@@ -23,6 +24,7 @@ a {
     transition: opacity .25s;
     &:first-of-type {
       opacity: 1;
+      z-index: 1;
     }
   }
   .controls {
@@ -32,6 +34,7 @@ a {
     width: 100%;
     bottom: 0;
     text-align: center;
+    z-index: 5;
 
     font-size: 3em;
     a {
@@ -58,20 +61,18 @@ a {
 
 @include gallery(3);
 
-
 .item-1 {
   background: #FF5C43;
-  p {
-    color: lighten(black, 35%);
-
-    text-rendering: optimizeLegibility;
-    font-size: 13pt;
-    margin-top: 4em;
-
-    @for $i from 1 through 20 {
-      @include breakpoint((240px + 20px * $i)) {
-        font-size: 13pt + 0.75pt * $i;
-        margin-top: 4em - .08em * $i;
+  .could-i-use-a-container-wrapper {
+    margin-top: 5em;
+    a {
+      color: lighten(black, 35%);
+      text-rendering: optimizeLegibility;
+      font-size: 13pt;
+      @for $i from 1 through 20 {
+        @include breakpoint((240px + 20px * $i)) {
+          font-size: 13pt + 0.75pt * $i;
+        }
       }
     }
   }
@@ -79,17 +80,16 @@ a {
 
 .item-2 {
   background: #097BC0;
-  p {
-    color: lighten(black, 15%);
-
-    font-size: 8.6pt;
+  .nyc-camp-hashtag-wrapper {
     margin-top: 6em;
-    text-rendering: optimizeLegibility;
-
-    @for $i from 1 through 20 {
-      @include breakpoint((240px + 20px * $i)) {
-        font-size: 8.6pt + 0.75pt * $i;
-        margin-top: 6em - .15em * $i;
+    a {
+      color: lighten(black, 15%);
+      font-size: 8.6pt;
+      text-rendering: optimizeLegibility;
+      @for $i from 1 through 20 {
+        @include breakpoint((240px + 20px * $i)) {
+          font-size: 8.6pt + 0.75pt * $i;
+        }
       }
     }
   }
