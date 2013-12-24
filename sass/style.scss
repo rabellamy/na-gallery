@@ -1,10 +1,7 @@
 @import "toolkit";
-@import "animation";
 
 @import "partials/global/variables";
 @import "partials/global/mixins";
-
-@import "partials/animations";
 
 a {
   text-decoration: none;
@@ -14,7 +11,7 @@ a {
 .gallery {
   position: relative;
   height: 200px;
-  @include breakpoint(320px) {
+  @include breakpoint(600px) {
     height: 300px;
   }
   .item {
@@ -67,18 +64,15 @@ a {
   p {
     color: lighten(black, 35%);
 
-    font-size: 13pt;
     text-rendering: optimizeLegibility;
+    font-size: 13pt;
+    margin-top: 4em;
 
     @for $i from 1 through 20 {
       @include breakpoint((240px + 20px * $i)) {
         font-size: 13pt + 0.75pt * $i;
+        margin-top: 4em - .08em * $i;
       }
-    }
-
-    margin-top: 6em;
-    @include breakpoint(400px) {
-      margin-top: 4em;
     }
   }
 }
@@ -89,16 +83,14 @@ a {
     color: lighten(black, 15%);
 
     font-size: 8.6pt;
+    margin-top: 6em;
     text-rendering: optimizeLegibility;
 
     @for $i from 1 through 20 {
       @include breakpoint((240px + 20px * $i)) {
         font-size: 8.6pt + 0.75pt * $i;
+        margin-top: 6em - .15em * $i;
       }
-    }
-    margin-top: 9em;
-    @include breakpoint(400px) {
-      margin-top: 5em;
     }
   }
 }
@@ -107,7 +99,7 @@ a {
   background: #285E88;
   img {
     margin-top: 2em;
-    @include breakpoint(400px) {
+    @include breakpoint(600px) {
       margin-top: 5em;
     }
   }

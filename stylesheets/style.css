@@ -19,7 +19,7 @@ a {
   position: relative;
   height: 200px;
 }
-@media (min-width: 20em) {
+@media (min-width: 37.5em) {
   .gallery {
     height: 300px;
   }
@@ -56,19 +56,15 @@ a {
   display: none;
 }
 .gallery .control-operator:target ~ .item {
-  -webkit-animation: none;
   -moz-animation: none;
-  -ms-animation: none;
-  -o-animation: none;
+  -webkit-animation: none;
   animation: none;
 }
 .gallery .control-operator:target ~ .controls .control-item {
   color: whiteSmoke;
   color: rgba(255, 255, 255, 0.4);
-  -webkit-animation: none;
   -moz-animation: none;
-  -ms-animation: none;
-  -o-animation: none;
+  -webkit-animation: none;
   animation: none;
 }
 
@@ -88,36 +84,6 @@ a {
   }
 }
 @-webkit-keyframes galleryAnimation-3 {
-  0% {
-    opacity: 0;
-  }
-
-  9.52381%,
-  33.33333% {
-    opacity: 1;
-  }
-
-  42.85714%,
-  100% {
-    opacity: 0;
-  }
-}
-@-o-keyframes galleryAnimation-3 {
-  0% {
-    opacity: 0;
-  }
-
-  9.52381%,
-  33.33333% {
-    opacity: 1;
-  }
-
-  42.85714%,
-  100% {
-    opacity: 0;
-  }
-}
-@-ms-keyframes galleryAnimation-3 {
   0% {
     opacity: 0;
   }
@@ -183,42 +149,6 @@ a {
     color: rgba(255, 255, 255, 0.4);
   }
 }
-@-o-keyframes controlAnimation-3 {
-  0% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  9.52381%,
-  33.33333% {
-    color: white;
-    color: white;
-  }
-
-  42.85714%,
-  100% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
-@-ms-keyframes controlAnimation-3 {
-  0% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
-  }
-
-  9.52381%,
-  33.33333% {
-    color: white;
-    color: white;
-  }
-
-  42.85714%,
-  100% {
-    color: whiteSmoke;
-    color: rgba(255, 255, 255, 0.4);
-  }
-}
 @keyframes controlAnimation-3 {
   0% {
     color: whiteSmoke;
@@ -238,17 +168,13 @@ a {
   }
 }
 .gallery .control-item {
-  -webkit-animation: controlAnimation-3 21s infinite;
   -moz-animation: controlAnimation-3 21s infinite;
-  -ms-animation: controlAnimation-3 21s infinite;
-  -o-animation: controlAnimation-3 21s infinite;
+  -webkit-animation: controlAnimation-3 21s infinite;
   animation: controlAnimation-3 21s infinite;
 }
 .gallery .item {
-  -webkit-animation: galleryAnimation-3 21s infinite;
   -moz-animation: galleryAnimation-3 21s infinite;
-  -ms-animation: galleryAnimation-3 21s infinite;
-  -o-animation: galleryAnimation-3 21s infinite;
+  -webkit-animation: galleryAnimation-3 21s infinite;
   animation: galleryAnimation-3 21s infinite;
 }
 .gallery .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
@@ -261,10 +187,8 @@ a {
 }
 .gallery .control-item:nth-of-type(1),
 .gallery .item:nth-of-type(1) {
-  -webkit-animation-delay: -2s;
   -moz-animation-delay: -2s;
-  -ms-animation-delay: -2s;
-  -o-animation-delay: -2s;
+  -webkit-animation-delay: -2s;
   animation-delay: -2s;
 }
 .gallery .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
@@ -277,10 +201,8 @@ a {
 }
 .gallery .control-item:nth-of-type(2),
 .gallery .item:nth-of-type(2) {
-  -webkit-animation-delay: 5s;
   -moz-animation-delay: 5s;
-  -ms-animation-delay: 5s;
-  -o-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
   animation-delay: 5s;
 }
 .gallery .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
@@ -293,10 +215,8 @@ a {
 }
 .gallery .control-item:nth-of-type(3),
 .gallery .item:nth-of-type(3) {
-  -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
-  -ms-animation-delay: 12s;
-  -o-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
   animation-delay: 12s;
 }
 
@@ -305,113 +225,128 @@ a {
 }
 .item-1 p {
   color: #595959;
-  font-size: 13pt;
   text-rendering: optimizeLegibility;
-  margin-top: 6em;
+  font-size: 13pt;
+  margin-top: 4em;
 }
 @media (min-width: 16.25em) {
   .item-1 p {
     font-size: 13.75pt;
+    margin-top: 3.92em;
   }
 }
 @media (min-width: 17.5em) {
   .item-1 p {
     font-size: 14.5pt;
+    margin-top: 3.84em;
   }
 }
 @media (min-width: 18.75em) {
   .item-1 p {
     font-size: 15.25pt;
+    margin-top: 3.76em;
   }
 }
 @media (min-width: 20em) {
   .item-1 p {
     font-size: 16pt;
+    margin-top: 3.68em;
   }
 }
 @media (min-width: 21.25em) {
   .item-1 p {
     font-size: 16.75pt;
+    margin-top: 3.6em;
   }
 }
 @media (min-width: 22.5em) {
   .item-1 p {
     font-size: 17.5pt;
+    margin-top: 3.52em;
   }
 }
 @media (min-width: 23.75em) {
   .item-1 p {
     font-size: 18.25pt;
+    margin-top: 3.44em;
   }
 }
 @media (min-width: 25em) {
   .item-1 p {
     font-size: 19pt;
+    margin-top: 3.36em;
   }
 }
 @media (min-width: 26.25em) {
   .item-1 p {
     font-size: 19.75pt;
+    margin-top: 3.28em;
   }
 }
 @media (min-width: 27.5em) {
   .item-1 p {
     font-size: 20.5pt;
+    margin-top: 3.2em;
   }
 }
 @media (min-width: 28.75em) {
   .item-1 p {
     font-size: 21.25pt;
+    margin-top: 3.12em;
   }
 }
 @media (min-width: 30em) {
   .item-1 p {
     font-size: 22pt;
+    margin-top: 3.04em;
   }
 }
 @media (min-width: 31.25em) {
   .item-1 p {
     font-size: 22.75pt;
+    margin-top: 2.96em;
   }
 }
 @media (min-width: 32.5em) {
   .item-1 p {
     font-size: 23.5pt;
+    margin-top: 2.88em;
   }
 }
 @media (min-width: 33.75em) {
   .item-1 p {
     font-size: 24.25pt;
+    margin-top: 2.8em;
   }
 }
 @media (min-width: 35em) {
   .item-1 p {
     font-size: 25pt;
+    margin-top: 2.72em;
   }
 }
 @media (min-width: 36.25em) {
   .item-1 p {
     font-size: 25.75pt;
+    margin-top: 2.64em;
   }
 }
 @media (min-width: 37.5em) {
   .item-1 p {
     font-size: 26.5pt;
+    margin-top: 2.56em;
   }
 }
 @media (min-width: 38.75em) {
   .item-1 p {
     font-size: 27.25pt;
+    margin-top: 2.48em;
   }
 }
 @media (min-width: 40em) {
   .item-1 p {
     font-size: 28pt;
-  }
-}
-@media (min-width: 25em) {
-  .item-1 p {
-    margin-top: 4em;
+    margin-top: 2.4em;
   }
 }
 
@@ -421,112 +356,127 @@ a {
 .item-2 p {
   color: #262626;
   font-size: 8.6pt;
+  margin-top: 6em;
   text-rendering: optimizeLegibility;
-  margin-top: 9em;
 }
 @media (min-width: 16.25em) {
   .item-2 p {
     font-size: 9.35pt;
+    margin-top: 5.85em;
   }
 }
 @media (min-width: 17.5em) {
   .item-2 p {
     font-size: 10.1pt;
+    margin-top: 5.7em;
   }
 }
 @media (min-width: 18.75em) {
   .item-2 p {
     font-size: 10.85pt;
+    margin-top: 5.55em;
   }
 }
 @media (min-width: 20em) {
   .item-2 p {
     font-size: 11.6pt;
+    margin-top: 5.4em;
   }
 }
 @media (min-width: 21.25em) {
   .item-2 p {
     font-size: 12.35pt;
+    margin-top: 5.25em;
   }
 }
 @media (min-width: 22.5em) {
   .item-2 p {
     font-size: 13.1pt;
+    margin-top: 5.1em;
   }
 }
 @media (min-width: 23.75em) {
   .item-2 p {
     font-size: 13.85pt;
+    margin-top: 4.95em;
   }
 }
 @media (min-width: 25em) {
   .item-2 p {
     font-size: 14.6pt;
+    margin-top: 4.8em;
   }
 }
 @media (min-width: 26.25em) {
   .item-2 p {
     font-size: 15.35pt;
+    margin-top: 4.65em;
   }
 }
 @media (min-width: 27.5em) {
   .item-2 p {
     font-size: 16.1pt;
+    margin-top: 4.5em;
   }
 }
 @media (min-width: 28.75em) {
   .item-2 p {
     font-size: 16.85pt;
+    margin-top: 4.35em;
   }
 }
 @media (min-width: 30em) {
   .item-2 p {
     font-size: 17.6pt;
+    margin-top: 4.2em;
   }
 }
 @media (min-width: 31.25em) {
   .item-2 p {
     font-size: 18.35pt;
+    margin-top: 4.05em;
   }
 }
 @media (min-width: 32.5em) {
   .item-2 p {
     font-size: 19.1pt;
+    margin-top: 3.9em;
   }
 }
 @media (min-width: 33.75em) {
   .item-2 p {
     font-size: 19.85pt;
+    margin-top: 3.75em;
   }
 }
 @media (min-width: 35em) {
   .item-2 p {
     font-size: 20.6pt;
+    margin-top: 3.6em;
   }
 }
 @media (min-width: 36.25em) {
   .item-2 p {
     font-size: 21.35pt;
+    margin-top: 3.45em;
   }
 }
 @media (min-width: 37.5em) {
   .item-2 p {
     font-size: 22.1pt;
+    margin-top: 3.3em;
   }
 }
 @media (min-width: 38.75em) {
   .item-2 p {
     font-size: 22.85pt;
+    margin-top: 3.15em;
   }
 }
 @media (min-width: 40em) {
   .item-2 p {
     font-size: 23.6pt;
-  }
-}
-@media (min-width: 25em) {
-  .item-2 p {
-    margin-top: 5em;
+    margin-top: 3em;
   }
 }
 
@@ -536,7 +486,7 @@ a {
 .item-3 img {
   margin-top: 2em;
 }
-@media (min-width: 25em) {
+@media (min-width: 37.5em) {
   .item-3 img {
     margin-top: 5em;
   }
