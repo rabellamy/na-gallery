@@ -2,3 +2,9 @@
 $item-display-duration: 5 !default; //seconds
 $transition-duration: 2 !default; // seconds
 $display-duration: $transition-duration + $item-display-duration;
+
+
+//////////////////
+// Breakpoint
+//////////////////
+$breakpoint-to-ems: true;
