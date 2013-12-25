@@ -10,6 +10,14 @@ img, video {
   height: auto;
 }
 
+.gallery .controls, .gallery .control-operator:target ~ .controls .control-item {
+  color: #8c8c8c;
+}
+
+.gallery .controls a:hover {
+  color: white;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -36,22 +44,12 @@ a {
   z-index: 1;
 }
 .gallery .controls {
-  color: #8c8c8c;
   position: absolute;
   width: 100%;
   bottom: 0;
   text-align: center;
   z-index: 5;
   font-size: 3em;
-}
-.gallery .controls a {
-  -moz-transition: color 0.25s;
-  -o-transition: color 0.25s;
-  -webkit-transition: color 0.25s;
-  transition: color 0.25s;
-}
-.gallery .controls a:hover {
-  color: white;
 }
 
 .gallery .control-operator {
@@ -63,7 +61,6 @@ a {
   animation: none;
 }
 .gallery .control-operator:target ~ .controls .control-item {
-  color: #8c8c8c;
   -moz-animation: none;
   -webkit-animation: none;
   animation: none;

@@ -3,6 +3,7 @@
 
 @import "partials/global/variables";
 @import "partials/global/mixins";
+@import "partials/global/extends";
 
 a {
   text-decoration: none;
@@ -27,7 +28,7 @@ a {
     }
   }
   .controls {
-    @include control-inactive;
+    @extend %control-inactive;
 
     position: absolute;
     width: 100%;
@@ -36,11 +37,9 @@ a {
     z-index: 5;
 
     font-size: 3em;
-    a {
-      @include transition(color .25s);
-    }
+
     a:hover {
-      @include control-active;
+      @extend %control-active;
     }
   }
 }
@@ -53,7 +52,7 @@ a {
     @include animation(none);
   }
   .control-operator:target ~ .controls .control-item {
-    @include control-inactive;
+    @extend %control-inactive;
     @include animation(none);
   }
 }
