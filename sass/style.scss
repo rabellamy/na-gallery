@@ -62,14 +62,28 @@ a {
 .item-1 {
   background: #FF5C43;
   .could-i-use-a-container-wrapper {
-    margin-top: 5em;
+    margin-top: 4em;
     a {
-      color: lighten(black, 35%);
+      display: block;
+    }
+    .should-i-use-a-carousel {
+      color: lighten(black, 30%);
       text-rendering: optimizeLegibility;
       font-size: 13pt;
       @for $i from 1 through 20 {
         @include breakpoint((240px + 20px * $i)) {
           font-size: 13pt + 0.75pt * $i;
+        }
+      }
+      margin-bottom: .5em;
+    }
+    .snugug-north {
+      color: lighten(black, 35%);
+      text-rendering: optimizeLegibility;
+      font-size: 10pt;
+      @for $i from 1 through 20 {
+        @include breakpoint((240px + 20px * $i)) {
+          font-size: 10pt + 0.50pt * $i;
         }
       }
     }

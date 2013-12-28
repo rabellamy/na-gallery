@@ -222,111 +222,220 @@ a {
   background: #FF5C43;
 }
 .item-1 .could-i-use-a-container-wrapper {
-  margin-top: 5em;
+  margin-top: 4em;
 }
 .item-1 .could-i-use-a-container-wrapper a {
-  color: #595959;
+  display: block;
+}
+.item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
+  color: #4d4d4d;
   text-rendering: optimizeLegibility;
   font-size: 13pt;
+  margin-bottom: .5em;
 }
 @media (min-width: 16.25em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 13.75pt;
   }
 }
 @media (min-width: 17.5em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 14.5pt;
   }
 }
 @media (min-width: 18.75em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 15.25pt;
   }
 }
 @media (min-width: 20em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 16pt;
   }
 }
 @media (min-width: 21.25em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 16.75pt;
   }
 }
 @media (min-width: 22.5em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 17.5pt;
   }
 }
 @media (min-width: 23.75em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 18.25pt;
   }
 }
 @media (min-width: 25em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 19pt;
   }
 }
 @media (min-width: 26.25em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 19.75pt;
   }
 }
 @media (min-width: 27.5em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 20.5pt;
   }
 }
 @media (min-width: 28.75em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 21.25pt;
   }
 }
 @media (min-width: 30em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 22pt;
   }
 }
 @media (min-width: 31.25em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 22.75pt;
   }
 }
 @media (min-width: 32.5em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 23.5pt;
   }
 }
 @media (min-width: 33.75em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 24.25pt;
   }
 }
 @media (min-width: 35em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 25pt;
   }
 }
 @media (min-width: 36.25em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 25.75pt;
   }
 }
 @media (min-width: 37.5em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 26.5pt;
   }
 }
 @media (min-width: 38.75em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 27.25pt;
   }
 }
 @media (min-width: 40em) {
-  .item-1 .could-i-use-a-container-wrapper a {
+  .item-1 .could-i-use-a-container-wrapper .should-i-use-a-carousel {
     font-size: 28pt;
+  }
+}
+.item-1 .could-i-use-a-container-wrapper .snugug-north {
+  color: #595959;
+  text-rendering: optimizeLegibility;
+  font-size: 10pt;
+}
+@media (min-width: 16.25em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 10.5pt;
+  }
+}
+@media (min-width: 17.5em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 11pt;
+  }
+}
+@media (min-width: 18.75em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 11.5pt;
+  }
+}
+@media (min-width: 20em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 12pt;
+  }
+}
+@media (min-width: 21.25em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 12.5pt;
+  }
+}
+@media (min-width: 22.5em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 13pt;
+  }
+}
+@media (min-width: 23.75em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 13.5pt;
+  }
+}
+@media (min-width: 25em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 14pt;
+  }
+}
+@media (min-width: 26.25em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 14.5pt;
+  }
+}
+@media (min-width: 27.5em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 15pt;
+  }
+}
+@media (min-width: 28.75em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 15.5pt;
+  }
+}
+@media (min-width: 30em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 16pt;
+  }
+}
+@media (min-width: 31.25em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 16.5pt;
+  }
+}
+@media (min-width: 32.5em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 17pt;
+  }
+}
+@media (min-width: 33.75em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 17.5pt;
+  }
+}
+@media (min-width: 35em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 18pt;
+  }
+}
+@media (min-width: 36.25em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 18.5pt;
+  }
+}
+@media (min-width: 37.5em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 19pt;
+  }
+}
+@media (min-width: 38.75em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 19.5pt;
+  }
+}
+@media (min-width: 40em) {
+  .item-1 .could-i-use-a-container-wrapper .snugug-north {
+    font-size: 20pt;
   }
 }
 
